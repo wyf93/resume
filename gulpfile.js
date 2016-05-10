@@ -6,18 +6,18 @@ var gulp         = require('gulp'),
     
     gulp.task('serve', ['less'], function () {
       browserSync.init({
-        server: './src'
+        server: './'
       });
       
-      gulp.watch('src/less/**/*.less', ['less']);
-      gulp.watch('src/*.html').on('change', reload);
+      gulp.watch('./src/less/**/*.less', ['less']);
+      gulp.watch('./**/*.html').on('change', reload);
     });
     
     gulp.task('less', function () {
-      gulp.src('src/less/common.less')
+      gulp.src('./src/less/style.less')
           .pipe(less())
           .pipe(autoprefixer())
-          .pipe(gulp.dest('src/dist/css'))
+          .pipe(gulp.dest('./dist/css'))
           .pipe(reload({stream: true}));
     });
     
