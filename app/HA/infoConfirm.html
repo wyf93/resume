@@ -1,0 +1,237 @@
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="link icon-only back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding">信确认息</div>
+    </div>
+</div>
+
+<div class="pages navbar-through">
+  <div data-page="infoConfirm" class="page">
+    <div class="page-content" id="infoConfirmContent">
+    <script id="infoConfirmTemplate">
+      <div class="stepbar">
+        <div class="step active"></div>
+        <div class="step active"></div>
+        <div class="step active"></div>
+        <div class="step active"></div>
+      </div>
+      {{#model.profile}}
+      <div class="content-block-title">个人资料</div>
+      <div class="list-block">
+        <ul>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">资金账号</div>
+                <div class="item-after">{{accountNo}}</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">客户姓名</div>
+                <div class="item-after">{{customerName}}</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">手机号码</div>
+                <div class="item-after">{{cellPhone}}</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">邮箱</div>
+                <div class="item-after">{{email}}</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">资产</div>
+                <div class="item-after"><span>{{assets}}</span>&nbsp;元</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      {{/model.profile}}
+      {{#model.products}}
+      {{#if product1}}
+      {{#product1}}
+      <div class="content-block-title">产品信息</div>
+      <div class="list-block">
+        <ul>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">收费模式</div>
+                <div class="item-after">{{pattern}}</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">产品名称</div>
+                <div class="item-after">{{name}}</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">协议开始时间</div>
+                <div class="item-after">{{start}}</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">协议结束时间</div>
+                <div class="item-after">{{end}}</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">共计时间</div>
+                <div class="item-after">{{title}}</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">月均费用</div>
+                <div class="item-after">{{feeMonth}} 元</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">共计费用</div>
+                <div class="item-after"><span>{{feeTotal}}</span>&nbsp;元</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">服务渠道</div>
+                <div class="item-text">{{ways}}</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      {{/product1}}
+      {{/if}}
+      {{#if product2}}
+      {{#product2}}
+      <div class="content-block-title">产品信息</div>
+      <div class="list-block">
+        <ul>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">收费模式</div>
+                <div class="item-after">{{pattern}}</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">佣金费率</div>
+                <div class="item-text">{{feeRate}}<br><small>(电话确认为准)</small></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">服务投顾</div>
+                <div class="item-text">{{counselor}}</br><small>(电话确认为准)</small></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">协议开始时间</div>
+                <div class="item-after">{{start}}</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">协议结束时间</div>
+                <div class="item-after">{{end}}</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">共计时间</div>
+                <div class="item-after">{{title}}</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">服务渠道</div>
+                <div class="item-text">{{ways}}</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      {{/product2}}
+      {{/if}}
+      {{/model.products}}
+      <div class="content-block-title">协议签署</div>
+      <div class="list-block">
+       <ul>
+        <li>
+          <div class="item-content">
+            <div class="item-title">我已同意并阅读《投顾服务协议书》</div>
+            <div class="item-after"><a href="agreement.html" class="xieyi">查看协议</a></div>
+          </div>
+        </li>
+       </ul>
+      </div>
+      <div class="content-block">
+        <label class="label-checkbox item-content agree-block">
+          <input type="checkbox" name="agreement" value="agreement">
+          <div class="item-media">
+            <i class="icon icon-form-checkbox"></i>
+          </div>
+          <div class="item-inner">
+            <div class="item-title">我已确认以上信息（如需帮助请<a href="#" class="contact">请联系我们</a>）</div>
+          </div>
+        </label>
+      </div>
+      <div class="content-block">
+        <a href="" class="button button-big button-fill">提交</a>
+      </div>
+    </script>
+    </div>
+  </div>
+</div>

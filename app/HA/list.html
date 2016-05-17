@@ -1,0 +1,48 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left">
+      <a href="#" class="link icon-only back">
+        <i class="icon icon-back"></i>
+      </a>
+    </div>
+    <div class="center sliding">投顾产品</div>
+  </div>
+</div>
+
+<div class="pages navbar-through">
+  <div data-page="list" class="page">
+    <div class="page-content" id="listContent">
+    <script id="listTemplate" type="text/template">
+    {{#model.products}}
+      {{#product1}}
+      <div class="product-card">
+        <div class="product-header">
+          <div class="card-title"><span>{{name}}</span></div>
+          <div class="card-after"><em>{{status}}</em></div>
+        </div>
+        <div class="product-content">
+          <div class="card-title">开通日期：{{start}}</div>
+          <div class="card-after"><a href="detail1.html">查看详情</a></div>
+        </div>
+      </div>
+      {{/product1}}
+      {{#product2}}
+      <div class="product-card">
+        <div class="product-header">
+          <div class="card-title"><span>{{counselor}}</span>&nbsp;顾问</div>
+          <div class="card-after"><em>审核中</em></div>
+        </div>
+        <div class="product-content">
+          <div class="card-title">开通日期：{{start}}</div>
+          <div class="card-after"><a href="detail2.html">查看详情</a></div>
+        </div>
+      </div>
+      {{/product2}}
+      {{/model.products}}
+      <div class="content-block">
+        <a href="choice.html" class="button button-fill button-big">购买投顾产品</a>
+      </div>
+    </script>
+    </div>
+  </div>
+</div>

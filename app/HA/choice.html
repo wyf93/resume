@@ -1,0 +1,157 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left">
+      <a href="#" class="link icon-only back">
+        <i class="icon icon-back"></i>
+      </a>
+    </div>
+    <div class="center sliding">投顾产品选择</div>
+  </div>
+</div>
+<div class="pages navbar-through">
+  <div data-page="choice" class="page">
+    <div class="page-content" id="choiceContent">
+    <script id="choiceTemplate" type="text/template">
+      <div class="stepbar">
+          <div class="step active"></div>
+          <div class="step active"></div>
+          <div class="step active"></div>
+          <div class="step"></div>
+        </div>
+      <div class="tabs clearfix">
+        <div class="tab1 choosen">差别化佣金模式</div>
+        <div class="tab2">固定收费模式</div>
+      </div>
+      <div class="list-block fee-rate">
+        <ul>
+          <li>
+            <a href="#" class="item-link">
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">费率值</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="请选择" readonly id="picker-feeRate">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="list-block-label">此处费率值紧供参考，请以电话核实的费率值为准</div>
+      </div>
+      <div class="list-block counselor">
+        <ul>
+          <li>
+            <a href="#" class="item-link">
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">服务顾问姓名</div>
+                  <div class="item-input">
+                   <input type="text" placeholder="请选择" readonly id="picker-counselor">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="list-block-label">请以电话确认为准</div>
+      </div>
+      <div class="list-block product">
+        <ul>
+          <li>
+            <a href="#" class="item-link">
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">产品选择</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="请选择" readonly id="picker-product">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">月均费用</div>
+                <div class="item-after"><span id="fee">500</span>&nbsp;元</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="content-block-title">协议时间</div>
+      <div class="list-block">
+        <ul>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">开始时间</div>
+                <div class="item-input">
+                  <input type="date" id="startDay">
+                </div>
+              </div>
+            </div>
+          </li
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">结束时间</div>
+                <div class="item-input">
+                  <input type="date" id="endDay">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">共计时间</div>
+                <div class="item-after" id="titleDays"></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="content-block-title">服务渠道<small class="fR">可多选</small></div>
+      <div class="channel-block clearfix">
+        <label>
+          <input type="checkbox" name='ways' checked>
+          <div class="way">手机短信</div>
+        </label>
+        <label>
+          <input type="checkbox" name='ways'>
+          <div class="way">电话</div>
+        </label>
+        <label>
+          <input type="checkbox" name='ways'>
+          <div class="way">电子邮件</div>
+        </label>
+        <label>
+          <input type="checkbox" name='ways'>
+          <div class="way">现场预约</div>
+        </label>
+        <label class="second">
+          <input type="checkbox" name='ways'>
+          <div class="way">理财终端服务</div>
+        </label>
+      </div>
+      <div class="list-block title">
+        <ul>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">共计费用</div>
+                <div class="item-after"><span>600.00</span>&nbsp;元</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="content-block">
+        <a href="" class="button button-big button-fill">确认</a>
+      </div>
+    </script>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,86 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left">
+      <a href="#" class="link icon-only back">
+        <i class="icon icon-back"></i>
+      </a>
+    </div>
+    <div class="center sliding">投顾产品</div>
+  </div>
+</div>
+
+<div class="pages navbar-through">
+  <div data-page="profile" class="page">
+    <div class="page-content" id="profileContent">
+    <script id="profileTemplate" type="text/template">
+      <div class="stepbar">
+        <div class="step active"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+      </div>
+      {{#model.profile}}
+      <div class="content-block-title">个人资料</div>
+      <div class="list-block">
+        <ul>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">资金账号</div>
+                <div class="item-after">{{accountNo}}</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">客户姓名</div>
+                <div class="item-after">{{customerName}}</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">手机号码</div>
+                <div class="item-after">{{cellPhone}}</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">邮箱</div>
+                <div class="item-after">{{email}}</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">资产</div>
+                <div class="item-after"><span>{{assets}}</span>&nbsp;元</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="content-block">
+        <label class="label-checkbox item-content agree-block">
+          <input type="checkbox" name="agreement" value="agreement">
+          <div class="item-media">
+            <i class="icon icon-form-checkbox"></i>
+          </div>
+          <div class="item-inner">
+            <div class="item-title">我已确认以上信息（如需帮助请<a class="contact">请联系我们</a>）</div>
+          </div>
+        </label>
+      </div>
+      <div class="content-block">
+        <a href="" class="button button-big button-fill">下一步</a>
+      </div>
+      {{/model.profile}}
+    </script>
+    </div>
+  </div>
+</div>

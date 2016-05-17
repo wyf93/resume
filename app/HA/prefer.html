@@ -1,0 +1,76 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left">
+      <a href="#" class="link icon-only back">
+        <i class="icon icon-back"></i>
+      </a>
+    </div>
+    <div class="center sliding">投资需求偏好</div>
+  </div>
+</div>
+
+<div class="pages navbar-through">
+  <div data-page="prefer" class="page">
+    <div class="page-content" id="preferContent">
+      <script id="preferTemplate" type="text/template">
+        <div class="stepbar">
+          <div class="step active"></div>
+          <div class="step active"></div>
+          <div class="step"></div>
+          <div class="step"></div>
+        </div>
+        <div class="content-block">为了给我们提供给您的服务负责，为了更了解您的投资习惯，请您耐心回答下面的问题。</div>
+        <form id="preferForm">
+          {{#each model.questions}}
+            <div class="content-block-title" id="topic_{{index}}">{{index}}.{{topic}}
+            {{#if multi}}
+            <small>（多选）</small>
+            </div>
+            <div class="list-block topic-options">
+              <ul>
+              {{#options}}
+                <li>
+                  <label class="label-radio item-content topic-option" data-index="multi">
+                    <div class="item-media"></div>
+                    <input type="checkbox" name="{{question_no}}" value="{{value}}">
+                    <div class="item-inner">{{option}}</div>
+                  </label>
+                </li>
+              {{/options}}
+            {{else}}
+            <small>（单选）</small>
+            </div>
+            <div class="list-block topic-options">
+              <ul>
+              {{#options}}
+                <li>
+                  <label class="label-radio item-content topic-option" data-index="{{../index}}">
+                    <div class="item-media"></div>
+                    <input type="radio" name="{{question_no}}" value="{{value}}">
+                    <div class="item-inner">{{option}}</div>
+                  </label>
+                </li>
+              {{/options}}
+            {{/if}}
+              </ul>
+            </div>
+          {{/each}}
+        </form>
+        <div class="content-block">
+          <label class="label-checkbox item-content agree-block">
+            <input type="checkbox" name="agreement" value="agreement">
+            <div class="item-media">
+              <i class="icon icon-form-checkbox"></i>
+            </div>
+            <div class="item-inner">
+              <div class="item-title">以上内容，我已认真阅读完毕，保证所提供的资料真实、准确、完整、有效，用于证券投资的资金来源合法，本人完全明白理财服务产品可能存在相关风险。</div>
+            </div>
+          </label>
+        </div>
+        <div class="content-block">
+        <a href="" class="button button-big button-fill prefer-submit-button">提交测评</a>
+        </div>
+      </script>
+    </div>
+  </div>
+</div>

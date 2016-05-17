@@ -1,0 +1,96 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left">
+      <a href="#" class="link icon-only back">
+        <i class="icon icon-back"></i>
+      </a>
+    </div>
+    <div class="center sliding">查看详情</div>
+  </div>
+</div>
+
+<div class="pages navbar-through">
+  <div data-page="detail2" class="page">
+    <div class="page-content" id="detail2Content">
+    <script id="detail2Template" type="text/template">
+    {{#model.products}}
+      {{#product2}}
+      <div class="content-block-title">产品信息</div>
+      <div class="list-block">
+        <ul>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">合同编码</div>
+                <div class="item-after">{{code}}</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">佣金费率</div>
+                <div class="item-after">{{feeRate}}</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">服务投顾</div>
+                <div class="item-after">{{counselor}}</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">协议开始时间</div>
+                <div class="item-after">{{start}}</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">协议结束时间</div>
+                <div class="item-after">{{end}}</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">共计时间</div>
+                <div class="item-after">{{title}}</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">共计费用</div>
+                <div class="item-after"><span>{{feeTotal}}</span>&nbsp;元</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">服务渠道</div>
+                <div class="item-text">{{ways}}</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="content-block">
+        <a href="" class="button button-big button-fill back">确认</a>
+        <p>如有问题请<a href="">联系我们</a></p>
+      </div>
+      {{/product2}}
+    {{/model.products}}
+    </script>
+    </div>
+  </div>
+</div>

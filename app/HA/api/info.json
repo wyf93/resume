@@ -1,0 +1,38 @@
+{
+  "errorNo": 0,
+  "model": {
+    "profile": {
+      "accountNo": "8006340",
+      "customerName": "周云",
+      "cellPhone": "13376566578",
+      "email": "1234@21321.com",
+      "assets": "2001.00"
+    },
+    "products": {
+      "product1": {
+        "code": "WTG 60000001",
+        "pattern": "固定收费模式",
+        "name": "至尊宝一号",
+        "start": "2016年2月1号",
+        "end": "2016年4月1号",
+        "title": "60天",
+        "feeMonth": "499.00",
+        "feeTotal": "1497.00",
+        "ways": "手机、电话、理财终端服务",
+        "status": "已开通"
+      },
+      "product2": {
+        "code": "WTG 60000002",
+        "pattern": "差别化佣金模式",
+        "feeRate": "W6",
+        "counselor": "华安证券总部 李晨",
+        "start": "2016年2月1号",
+        "end": "2016年4月1号",
+        "title": "60天",
+        "feeTotal": "1497.00",
+        "ways": "手机、电话、理财终端服务",
+        "status": "审核中"
+      }
+    }
+  }
+}
