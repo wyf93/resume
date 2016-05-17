@@ -1,0 +1,57 @@
+body {
+    background: none;
+}
+.imageBox-shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    z-index: 1000; 
+}
+.imageBox {
+    position: absolute;
+    z-index: 1001;
+    left: 50%;
+    top: 50%;
+//  margin-left: -250px;
+//  margin-top: -150px;
+    border-radius: 4px;
+    border: 4px solid #fff;
+    span {
+        position: absolute;
+        width: 40%;
+        height: 100%;
+        top: 0;
+        cursor: pointer;
+        &.prevBtn {
+            left: 0;
+            &:hover {
+                background: url('../img/prev.png') left center no-repeat;
+            }   
+        }
+        &.nextBtn {
+            right: 0;
+            &:hover {
+                background: url('../img/next.png') right center no-repeat;  
+            }   
+        }
+    }
+    img {
+//      width: 500px;
+//      height: 300px;
+    }
+    .close {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background: url('../img/close.png') center center no-repeat;
+        cursor: pointer;
+    }
+}
+
